@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build",
+    "cy:open": "cypress open"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@nuxtjs/storybook": "^8.3.1",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "font-awesome": "^4.7.0",
+    "nuxt": "3.11.2",
+    "vue": "latest",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@chromatic-com/cypress": "^0.8.0",
+    "@nuxtjs/storybook": "7.0.2",
+    "@storybook-vue/nuxt": "0.2.6",
+    "@storybook/addon-essentials": "8.0.8",
+    "@storybook/addon-interactions": "8.0.8",
+    "@storybook/addon-links": "8.0.8",
+    "@storybook/blocks": "8.0.8",
+    "@storybook/builder-vite": "8.0.8",
+    "@storybook/test": "8.0.8",
+    "@storybook/vue3": "8.0.8",
+    "@storybook/vue3-vite": "^8.3.5",
+    "@types/node": "^18.17.5",
+    "autoprefixer": "^10.4.20",
+    "chromatic": "^11.12.5",
+    "cypress": "^13.15.0",
+    "storybook": "^8.3.5"
+  }
+}

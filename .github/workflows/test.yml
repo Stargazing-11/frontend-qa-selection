@@ -1,0 +1,22 @@
+name: Cypress Tests
+
+on:
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        env:
+          ELECTRON_EXTRA_LAUNCH_ARGS: --remote-debugging-port=9222
+        with:
+          build: npm run build
+          start: npm run preview
+          browser: chrome
